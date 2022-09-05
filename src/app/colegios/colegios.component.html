@@ -1,0 +1,24 @@
+<h3>Los Colegios de Toledo</h3>
+<hr>
+
+<button class="btn btn-outline-primary m-3"
+    (click)="agregarColegio()">
+    Agregar colegio
+</button>
+
+<button class="btn btn-outline-danger "
+    (click)="borrarColegio()">
+    Borrar colegio
+</button>
+
+<ul *ngIf="colegios.length > 0; else noHayColegios">
+    <li *ngFor="let cole of colegios; let i = index">
+        {{i + 1}} - {{cole}}
+    </li>
+</ul>
+
+<ng-template #noHayColegios>
+    <div class="alert alert-warning" role="alert">
+        No hay colegios
+    </div>
+</ng-template>
