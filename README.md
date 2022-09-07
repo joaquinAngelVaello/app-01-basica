@@ -1,27 +1,41 @@
-# Basica
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
-## Development server
+# Ejercicio Básico de Angular
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este es un ejercicio con los siguientes elementos.
 
-## Code scaffolding
+- crear una aplicación nueva.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+ng new basica
+```
 
-## Build
+Dimos la opción a crear el archivo de rutas.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Creamos el primer componente
 
-## Running unit tests
+```
+ng g c colegios
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Creamos el primer servicio
 
-## Running end-to-end tests
+```
+ng g s services/colegios
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Conceptos nuevos.
 
-## Further help
+Directivas estructurales *ngFor, *ngIf
+Usamos en el html la interpolación de string con {{ expesión válida de
+javascript}}
+Otro concepto fué el de templates literales con ``
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Creamos en el componente unos eventos para añadir o borrar colegios.
+
+Vimos algo del ciclo de vida de los componentes de angular. En nuestro caso
+OnInit ( para cuando se carga un componente )
+
+Usamos en el html ng-template
+
+Inyectamos el servicio en el componente.
